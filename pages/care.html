@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Поради — GreenGuide</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/care.css"
+</head>
+
+<body>
+
+    <!-- ===== ХЕДЕР ===== -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="../index.html" class="logo">🌿 GreenGuide</a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="../index.html">Головна</a></li>
+                    <li><a href="types.html">Види газонів</a></li>
+                    <li><a href="care.html" class="active">Поради</a></li>
+                    <li><a href="calculator.html">Калькулятор</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+
+            <button class="theme-toggle" id="themeToggle" title="Змінити тему">🌙</button>
+            <button class="burger" id="burger" aria-label="Меню">☰</button>
+        </div>
+    </header>
+
+    <!-- ===== ОСНОВНИЙ КОНТЕНТ ===== -->
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>🌱 Сезонний календар догляду за газоном</h1>
+                <p>Обери пору року та отримай покрокові поради</p>
+            </div>
+        </section>
+
+        <section class="care-section">
+            <div class="container">
+
+                <!-- КНОПКИ СЕЗОНІВ -->
+                <div class="season-tabs">
+                    <button class="season-btn active" data-season="spring">🌸 Весна</button>
+                    <button class="season-btn" data-season="summer">☀️ Літо</button>
+                    <button class="season-btn" data-season="autumn">🍂 Осінь</button>
+                    <button class="season-btn" data-season="winter">❄️ Зима</button>
+                </div>
+
+                <!-- КОНТЕЙНЕР ДЛЯ ПОРАД -->
+                <div class="season-content" id="seasonContent">
+                    <!-- Сюди JS підставлятиме текст -->
+                </div>
+
+            </div>
+        </section>
+
+        <!-- БЛОК "5 ГОЛОВНИХ ПОМИЛОК" -->
+        <section class="mistakes-section">
+            <div class="container">
+                <h2>⚠️ 5 головних помилок новачків</h2>
+                <ul class="mistakes-list">
+                    <li><strong>Частий полив маленькими порціями</strong> — краще рідше, але рясно.</li>
+                    <li><strong>Занадто низьке скошування</strong> — ослабляє кореневу систему.</li>
+                    <li><strong>Ігнорування аерації</strong> — ґрунт ущільнюється, корені не дихають.</li>
+                    <li><strong>Неправильне добриво</strong> — надлишок азоту веде до хвороб.</li>
+                    <li><strong>Ходіння по газону взимку</strong> — трава ламається під вагою.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== ФУТЕР ===== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>&copy; 2026 GreenGuide. Навчальний проєкт.</p>
+            <p>Зроблено з 💚 для практики</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/care.js"></script>
+</body>
+
+</html>

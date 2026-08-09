@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакти — GreenGuide</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/contacts.css" />
+</head>
+
+<body>
+
+    <!-- ===== ХЕДЕР ===== -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="../index.html" class="logo">🌿 GreenGuide</a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="../index.html">Головна</a></li>
+                    <li><a href="types.html">Види газонів</a></li>
+                    <li><a href="care.html">Поради</a></li>
+                    <li><a href="calculator.html">Калькулятор</a></li>
+                    <li><a href="contacts.html" class="active">Контакти</a></li>
+                </ul>
+            </nav>
+
+            <button class="theme-toggle" id="themeToggle" title="Змінити тему">🌙</button>
+            <button class="burger" id="burger" aria-label="Меню">☰</button>
+        </div>
+    </header>
+
+    <!-- ===== ОСНОВНИЙ КОНТЕНТ ===== -->
+    <main>
+        <section class="contacts-header">
+            <div class="container">
+                <h1>📬 Контакти</h1>
+                <p>Маєш питання? Напиши нам — ми завжди на зв'язку!</p>
+            </div>
+        </section>
+
+        <section class="contacts-section">
+            <div class="container">
+                <div class="contacts-wrapper">
+
+                    <!-- ===== ЛІВА КОЛОНКА - ІНФОРМАЦІЯ ===== -->
+                    <div class="contacts-info">
+                        <h2>Зв'яжись з нами</h2>
+                        <p class="contacts-desc">
+                            Ми — команда ентузіастів, які створили цей сайт у рамках навчальної практики.
+                            Якщо у тебе є запитання, пропозиції або потрібна допомога — звертайся!
+                        </p>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <strong>Email</strong>
+                                <p>greenguide@example.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <div>
+                                <strong>Телефон</strong>
+                                <p>+38 (099) 123-45-67</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong>Адреса</strong>
+                                <p>м. Київ, вул. Зелена, 1</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">🕐</span>
+                            <div>
+                                <strong>Графік роботи</strong>
+                                <p>Пн-Пт: 09:00 – 18:00</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" class="social-link">📘</a>
+                            <a href="#" class="social-link">📸</a>
+                            <a href="#" class="social-link">🐦</a>
+                            <a href="#" class="social-link">▶️</a>
+                        </div>
+                    </div>
+
+                    <!-- ===== ПРАВА КОЛОНКА - ФОРМА ===== -->
+                    <div class="contacts-form-wrapper">
+                        <h2>Написати повідомлення</h2>
+                        <form class="contacts-form" id="contactsForm" novalidate>
+
+                            <div class="form-group">
+                                <label for="userName">Ваше ім'я *</label>
+                                <input type="text" id="userName" placeholder="Іван Петренко" required />
+                                <span class="error-message" id="nameError">Будь ласка, введіть ім'я</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="userEmail">Email *</label>
+                                <input type="email" id="userEmail" placeholder="ivan@example.com" required />
+                                <span class="error-message" id="emailError">Введіть коректну email-адресу</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="userSubject">Тема</label>
+                                <input type="text" id="userSubject" placeholder="Питання про газон" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="userMessage">Повідомлення *</label>
+                                <textarea id="userMessage" rows="5" placeholder="Напишіть ваше повідомлення..."
+                                    required></textarea>
+                                <span class="error-message" id="messageError">Будь ласка, введіть повідомлення (мінімум
+                                    10 символів)</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-contacts">📨 Відправити</button>
+                        </form>
+
+                        <!-- ===== ПОВІДОМЛЕННЯ ПРО УСПІХ ===== -->
+                        <div class="success-message" id="successMessage">
+                            <span>✅</span>
+                            <h3>Дякуємо!</h3>
+                            <p>Ваше повідомлення успішно відправлено.</p>
+                            <button class="btn btn-secondary" id="resetFormBtn">Написати ще</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== ФУТЕР ===== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>&copy; 2026 GreenGuide. Навчальний проєкт.</p>
+            <p>Зроблено з 💚 для практики</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/contacts.js"></script>
+</body>
+
+</html>

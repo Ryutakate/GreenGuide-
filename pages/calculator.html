@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор — GreenGuide</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/calculator.css" />
+</head>
+
+<body>
+
+    <!-- ===== ХЕДЕР ===== -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="../index.html" class="logo">🌿 GreenGuide</a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="../index.html">Головна</a></li>
+                    <li><a href="types.html">Види газонів</a></li>
+                    <li><a href="care.html">Поради</a></li>
+                    <li><a href="calculator.html" class="active">Калькулятор</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+
+            <button class="theme-toggle" id="themeToggle" title="Змінити тему">🌙</button>
+            <button class="burger" id="burger" aria-label="Меню">☰</button>
+        </div>
+    </header>
+
+    <!-- ===== ОСНОВНИЙ КОНТЕНТ ===== -->
+    <main>
+        <section class="calc-header">
+            <div class="container">
+                <h1>🧮 Калькулятор газону</h1>
+                <p>Розрахуй кількість насіння або рулонів для своєї ділянки</p>
+            </div>
+        </section>
+
+        <section class="calc-section">
+            <div class="container">
+                <div class="calc-wrapper">
+
+                    <!-- ===== ФОРМА ===== -->
+                    <form class="calc-form" id="calcForm">
+                        <div class="form-group">
+                            <label for="length">📏 Довжина ділянки (м)</label>
+                            <input type="number" id="length" placeholder="Наприклад: 10" min="1" step="0.5" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="width">📐 Ширина ділянки (м)</label>
+                            <input type="number" id="width" placeholder="Наприклад: 8" min="1" step="0.5" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="type">🌱 Тип газону</label>
+                            <select id="type">
+                                <option value="seed">Насіння (звичайне)</option>
+                                <option value="seed_premium">Насіння (преміум)</option>
+                                <option value="roll">Рулонний газон</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-calc">Розрахувати</button>
+                    </form>
+
+                    <!-- ===== РЕЗУЛЬТАТ ===== -->
+                    <div class="calc-result" id="calcResult">
+                        <div class="result-placeholder">
+                            <span>📊</span>
+                            <p>Заповни форму та натисни "Розрахувати"</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ДОДАТКОВА ІНФОРМАЦІЯ ===== -->
+        <section class="calc-info">
+            <div class="container">
+                <h2>📌 Як правильно розрахувати?</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>📏 Виміряй ділянку</h3>
+                        <p>Виміряй довжину та ширину в метрах. Якщо ділянка неправильної форми — розбий її на
+                            прямокутники та склади площі.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>🌱 Обери тип газону</h3>
+                        <p>Для насіння — 30-50 г/м² (звичайне) або 40-60 г/м² (преміум). Для рулонного — 1 рулон = 0.8
+                            м².</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>🧾 Додай запас</h3>
+                        <p>Додай 5-10% до розрахунку на випадок пошкоджень, нерівностей або підсіву.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== ФУТЕР ===== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>&copy; 2026 GreenGuide. Навчальний проєкт.</p>
+            <p>Зроблено з 💚 для практики</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/calculator.js"></script>
+</body>
+
+</html>
