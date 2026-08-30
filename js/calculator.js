@@ -90,18 +90,3 @@ form.addEventListener('submit', (e) => {
     const result = calculate(length, width, type);
     renderResult(result);
 });
-
-// ===== АВТОМАТИЧНИЙ РОЗРАХУНОК ПРИ ЗМІНІ (опціонально) =====
-// Розкоментуй, якщо хочеш, щоб рахувало без натискання кнопки
-/*
-form.addEventListener('input', () => {
-    const length = parseFloat(lengthInput.value);
-    const width = parseFloat(widthInput.value);
-    const type = typeSelect.value;
-
-    if (!isNaN(length) && !isNaN(width) && length > 0 && width > 0) {
-        const result = calculate(length, width, type);
-        renderResult(result);
-    }
-});
-*/

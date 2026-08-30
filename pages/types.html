@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Види газонів — GreenGuide</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/types.css" />
 </head>
 
 <body>
+
+    <!-- ===== ХЕДЕР ===== -->
     <header class="header">
         <div class="container header__inner">
             <a href="../index.html" class="logo">🌿 GreenGuide</a>
+
             <nav class="nav" id="nav">
                 <ul class="nav__list">
                     <li><a href="../index.html">Головна</a></li>
@@ -21,29 +25,51 @@
                     <li><a href="contacts.html">Контакти</a></li>
                 </ul>
             </nav>
-            <button class="theme-toggle" id="themeToggle">🌙</button>
-            <button class="burger" id="burger">☰</button>
+
+            <button class="theme-toggle" id="themeToggle" title="Змінити тему">🌙</button>
+            <button class="burger" id="burger" aria-label="Меню">☰</button>
         </div>
     </header>
 
+    <!-- ===== ОСНОВНИЙ КОНТЕНТ ===== -->
     <main>
-        <section style="padding: 60px 20px; text-align: center;">
+        <section class="types-header">
             <div class="container">
-                <h1>Види газонів</h1>
-                <p style="font-size: 18px; margin-top: 20px; color: #4a5a4a;">
-                    Тут буде контент про види газонів. 🟢
-                </p>
+                <h1>🌿 Види газонів</h1>
+                <p>Обери ідеальний газон для своєї ділянки — від партерного до спортивного</p>
+            </div>
+        </section>
+
+        <section class="types-section">
+            <div class="container">
+
+                <!-- ===== КАРТКИ ВИДІВ ===== -->
+                <div class="types-grid" id="typesGrid">
+                    <!-- Картки будуть вставлені JS -->
+                </div>
+
+                <!-- ===== ДЕТАЛЬНА ІНФОРМАЦІЯ (акордеон) ===== -->
+                <div class="types-detail" id="typesDetail">
+                    <div class="detail-placeholder">
+                        <span>👆</span>
+                        <p>Натисни на картку, щоб дізнатися більше</p>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
 
+    <!-- ===== ФУТЕР ===== -->
     <footer class="footer">
         <div class="container footer__inner">
             <p>&copy; 2026 GreenGuide. Навчальний проєкт.</p>
+            <p>Зроблено з 💚 для практики</p>
         </div>
     </footer>
 
     <script src="../js/script.js"></script>
+    <script src="../js/types.js"></script>
 </body>
 
 </html>
